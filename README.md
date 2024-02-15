@@ -21,16 +21,7 @@
    - Define acceptable slippage percentages for buy and sell transactions.
 
 ## Getting Started
-
-### Prerequisites
-
-1. **Solana Wallet:**
-   - Ensure you have a Solana wallet with sufficient funds for trading and transaction fees.
-
-2. **Environment:**
-   - .
-
-3. **Dependencies:**
+ **Dependencies:**
    - **SolNet:**
    - **Function:** SolNet is a C# library for Solana blockchain interaction. It facilitates transaction creation, signing, and querying account information via the Solana RPC API, enabling seamless integration of Solana features into C# applications.
 
@@ -46,10 +37,10 @@
 ### Configuration
 
 1. **Configure Wallet:**
-   - Provide your Solana wallet address and private key in the configuration file.
+   - Provide your Solana wallet address and private key in the config.json file.
 
 2. **Set Trading Parameters:**
-   - Adjust transaction priority, AutoBuy settings, buy/sell buttons, and slippage in the configuration file.
+   - Adjust transaction priority, AutoBuy settings, buy/sell buttons, and slippage in the configuration field.
 
 3. **Token Pair Information:**
    - Specify the SPL token pairs you want to trade.
