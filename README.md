@@ -1,8 +1,5 @@
 # Solana SPL Token Trading Bot
 
-## Introduction
-
-This repository contains the source code and documentation for a bot designed to facilitate the snipping and trading of SPL tokens on the Solana blockchain. The bot allows users to set transaction priority levels (medium, high, very high) and configure auto-buy settings with buy and sell buttons, as well as adjust slippage parameters.
 
 ## Features
 
@@ -34,7 +31,17 @@ This repository contains the source code and documentation for a bot designed to
    - .
 
 3. **Dependencies:**
-   - .
+   - **SolNet:**
+   - **Function:** SolNet is a C# library designed for interacting with the Solana blockchain. It provides functionality for creating and signing transactions, querying account information, and working with the Solana RPC API. SolNet facilitates the integration of Solana blockchain features into C# applications, making it easier for developers to build Solana-compatible tools and bots.
+
+   - **Newtonsoft.Json:**
+   - **Function:** Newtonsoft.Json, also known as Json.NET, is a widely used JSON library for C#. Its primary purpose is to handle the parsing and generation of JSON data. In the context of a trading bot, Newtonsoft.Json may be employed to manage communication with Solana nodes or other external APIs that return data in JSON format. It simplifies the serialization and deserialization of JSON objects, making it a valuable tool for data exchange in a standardized format.
+
+   - **.NET Framework 4.8:**
+   - **Function:** The .NET Framework 4.8 is the runtime framework for your C# application. It provides a comprehensive set of libraries and runtime components for developing and executing Windows applications. The choice of .NET Framework 4.8 suggests that your trading bot is designed to run on Windows environments and leverages the features and capabilities offered by this specific version of the .NET Framework.
+
+   - **Nethereum:**
+   - **Function:** Nethereum is a .NET integration library tailored for Ethereum. While not directly related to Solana, it is included in your dependencies list. If your trading bot interacts with Ethereum-based contracts or features, Nethereum provides the necessary tools for connecting, querying, and interacting with the Ethereum blockchain. It streamlines Ethereum-related operations within a C# application, offering functionalities such as smart contract interaction and transaction handling.
 
 ### Configuration
 
@@ -66,12 +73,7 @@ This repository contains the source code and documentation for a bot designed to
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Thanks to the Solana community for providing valuable resources and documentation.
-
 ## Disclaimer
 
 This bot comes with no guarantees or warranties. Use it at your own risk, and be aware of potential risks associated with automated trading on the blockchain.
 
-Happy trading on the Solana blockchain!
