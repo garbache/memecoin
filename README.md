@@ -37,10 +37,10 @@
 ### Configuration
 
 1. **Configure Wallet:**
-   - Provide your Solana wallet address and private key in the config.json file.
+   - Provide your Solana wallet address and private key in the configuration field.
 
 2. **Set Trading Parameters:**
-   - Adjust transaction priority, AutoBuy settings, buy/sell buttons, and slippage in the configuration field.
+   - Adjust transaction priority, AutoBuy settings, buy/sell buttons, and slippage in the config field.
 
 3. **Token Pair Information:**
    - Specify the SPL token pairs you want to trade.
@@ -48,7 +48,7 @@
 ## Usage
 
 1. **Run the Bot:**
-   - Execute the bot script with the command ``.
+   - Execute the bot script.
 
 2. **Monitor Console Output:**
    - Review the console output for transaction details, status, and any potential errors.
