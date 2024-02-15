@@ -4,12 +4,12 @@
    - Provide an overview of the project, its purpose, and how to set it up.
    - Include installation instructions, configuration details, and any other relevant information.
 
-2. **bot.py:**
+2. **bot.exe:**
    - The main script for your trading bot. This script will contain the logic for buying and trading tokens.
    - Use a Solana SDK library (e.g., PySolana) to interact with the Solana blockchain.
 
-```python
-# bot.py
+```
+# bot.
 # Your trading bot logic goes here
 ```
 
@@ -68,13 +68,13 @@ pip install -r requirements.txt
 
 3. Configure the bot:
 
-   - Create a copy of `config.yaml.example` as `config.yaml`.
+   - Create a copy of `config.env.example` as `config.env`.
    - Fill in the required information such as Solana wallet address, private key, token pair, and exchange API keys.
 
 4. Run the bot:
 
 ```bash
-python bot.py
+
 ```
 
 ### Note:
