@@ -1,19 +1,19 @@
-### Repository Structure:
+1. **Solana.NET Library**: The bot uses the Solana.NET library, which is a .NET Standard library for interacting with the Solana blockchain. It provides classes and methods to communicate with a Solana RPC (Remote Procedure Call) endpoint, build transactions, and handle accounts and keys.
 
-1. **README.md:**
-   - Provide an overview of the project, its purpose, and how to set it up.
-   - Include installation instructions, configuration details, and any other relevant information.
+2. **Solana RPC Endpoint**: The `SolanaRpcEndpoint` variable specifies the URL of the Solana RPC endpoint. This endpoint is crucial for sending requests to the Solana blockchain, such as fetching recent block hashes or submitting transactions.
 
-2. **bot.exe:**
-   - The main script for your trading bot. This script will contain the logic for buying and trading tokens.
-   - Use a Solana SDK library (e.g., PySolana) to interact with the Solana blockchain.
+3. **Wallet Management**: The bot uses a basic wallet management approach. The `Wallet` class encapsulates the private and public keys. The private key (`WalletPrivateKey`) should be kept confidential and securely managed. In a production environment, it's recommended to use a secure key management solution.
 
-```
-# bot.
-# Your trading bot logic goes here
-```
+4. **Buying SOL Tokens**: The example transaction demonstrates how to send SOL tokens from the bot's wallet to a target wallet. It uses the `TransactionBuilder` to create a transaction, setting the recent block hash, fee payer, and adding an instruction to transfer SOL tokens to the target wallet.
 
-3. **config.json:**
+5. **Transaction Signing and Submission**: The bot signs the transaction using the private key from the wallet. After signing, the transaction is submitted to the Solana blockchain using the `SendTransaction` method of the RPC client. The resulting transaction ID is then printed to the console.
+
+6. **Caution and Security**: Handling private keys securely is crucial. Always use secure practices to manage private keys, and avoid hardcoding them directly in the code. In a production environment, consider using secure key storage solutions and never expose private keys in public repositories or shared environments.
+
+7. **Production Considerations**: In a production environment, you would need to enhance the bot with error handling, logging, rate limiting, and possibly more sophisticated transaction logic. Additionally, be aware of Solana's best practices and comply with legal and regulatory requirements.
+
+
+ **config.json:**
    - Configuration file to store parameters such as API keys, wallet addresses, and other settings.
 
 ```
@@ -32,25 +32,7 @@ api:
 ```
 
 4. **requirements.txt:**
-   - List the required Python packages for your project.
-
-```plaintext
-pysolana==<version>
-<other_dependencies>
-```
-
-5. **LICENSE:**
-   - Choose an open-source license that suits your project (e.g., MIT, Apache).
-
-6. **.gitignore:**
-   - Specify files and directories to be ignored by Git.
-
-```plaintext
-__pycache__/
-venv/
-config.yaml
-```
-
+   -
 ### Usage:
 
 1. Clone the repository:
@@ -68,14 +50,11 @@ pip install -r requirements.txt
 
 3. Configure the bot:
 
-   - Create a copy of `config.env.example` as `config.env`.
+   - Create a copy of `config.json.example` as `config.json`.
    - Fill in the required information such as Solana wallet address, private key, token pair, and exchange API keys.
 
-4. Run the bot:
+4. Run the bot.
 
-```bash
-
-```
 
 ### Note:
 
