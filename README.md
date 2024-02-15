@@ -30,9 +30,6 @@ api:
   api_key: <your_exchange_api_key>
   api_secret: <your_exchange_api_secret>
 ```
-
-4. **requirements.txt:**
-   -
 ### Usage:
 
 1. Clone the repository:
