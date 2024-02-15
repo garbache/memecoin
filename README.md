@@ -13,11 +13,11 @@
 # Your trading bot logic goes here
 ```
 
-3. **config.yaml:**
+3. **config.json:**
    - Configuration file to store parameters such as API keys, wallet addresses, and other settings.
 
-```yaml
-# config.yaml
+```
+# config.json
 solana:
   network: devnet
   wallet_address: <your_wallet_address>
