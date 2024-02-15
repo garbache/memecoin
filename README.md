@@ -1,60 +1,77 @@
-1. **Solana.NET Library**: The bot uses the Solana.NET library, which is a .NET Standard library for interacting with the Solana blockchain. It provides classes and methods to communicate with a Solana RPC (Remote Procedure Call) endpoint, build transactions, and handle accounts and keys.
+# Solana SPL Token Trading Bot
 
-2. **Solana RPC Endpoint**: The `SolanaRpcEndpoint` variable specifies the URL of the Solana RPC endpoint. This endpoint is crucial for sending requests to the Solana blockchain, such as fetching recent block hashes or submitting transactions.
+## Introduction
 
-3. **Wallet Management**: The bot uses a basic wallet management approach. The `Wallet` class encapsulates the private and public keys. The private key (`WalletPrivateKey`) should be kept confidential and securely managed. In a production environment, it's recommended to use a secure key management solution.
+This repository contains the source code and documentation for a bot designed to facilitate the snipping and trading of SPL tokens on the Solana blockchain. The bot allows users to set transaction priority levels (medium, high, very high) and configure auto-buy settings with buy and sell buttons, as well as adjust slippage parameters.
 
-4. **Buying SOL Tokens**: The example transaction demonstrates how to send SOL tokens from the bot's wallet to a target wallet. It uses the `TransactionBuilder` to create a transaction, setting the recent block hash, fee payer, and adding an instruction to transfer SOL tokens to the target wallet.
+## Features
 
-5. **Transaction Signing and Submission**: The bot signs the transaction using the private key from the wallet. After signing, the transaction is submitted to the Solana blockchain using the `SendTransaction` method of the RPC client. The resulting transaction ID is then printed to the console.
+1. **Transaction Priority Levels:**
+   - Medium: Standard transaction processing time.
+   - High: Faster transaction processing with a slightly higher fee.
+   - Very High: Expedited transaction processing with a higher fee.
 
-6. **Caution and Security**: Handling private keys securely is crucial. Always use secure practices to manage private keys, and avoid hardcoding them directly in the code. In a production environment, consider using secure key storage solutions and never expose private keys in public repositories or shared environments.
+2. **AutoBuy Configuration:**
+   - Users can configure the bot to automatically execute buy orders based on predefined criteria.
+   - AutoBuy settings include token pair, quantity, and target price.
 
-7. **Production Considerations**: In a production environment, you would need to enhance the bot with error handling, logging, rate limiting, and possibly more sophisticated transaction logic. Additionally, be aware of Solana's best practices and comply with legal and regulatory requirements.
+3. **Buy and Sell Buttons Configuration:**
+   - Customize buy and sell buttons with specific parameters.
+   - Set the token pair, quantity, and price for each button.
+
+4. **Slippage Configuration:**
+   - Adjust slippage tolerance to optimize trade execution.
+   - Define acceptable slippage percentages for buy and sell transactions.
+
+## Getting Started
+
+### Prerequisites
+
+1. **Solana Wallet:**
+   - Ensure you have a Solana wallet with sufficient funds for trading and transaction fees.
+
+2. **Environment:**
+   - .
+
+3. **Dependencies:**
+   - .
+
+### Configuration
+
+1. **Configure Wallet:**
+   - Provide your Solana wallet address and private key in the configuration file.
+
+2. **Set Trading Parameters:**
+   - Adjust transaction priority, AutoBuy settings, buy/sell buttons, and slippage in the configuration file.
+
+3. **Token Pair Information:**
+   - Specify the SPL token pairs you want to trade.
+
+## Usage
+
+1. **Run the Bot:**
+   - Execute the bot script with the command ``.
+
+2. **Monitor Console Output:**
+   - Review the console output for transaction details, status, and any potential errors.
+
+3. **Interact with Buy/Sell Buttons:**
+   - Utilize the configured buy and sell buttons to execute trades manually.
+
+4. **Automated Trading:**
+   - Enable the AutoBuy feature for hands-free trading based on predefined criteria.
 
 
- **config.json:**
-   - Configuration file to store parameters such as API keys, wallet addresses, and other settings.
+## License
 
-```
-# config.json
-solana:
-  network: devnet
-  wallet_address: <your_wallet_address>
-  private_key: <your_private_key>
-  token_pair: <token_pair_to_trade>
-  buy_threshold: 0.001
-  sell_threshold: 0.02
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-api:
-  api_key: <your_exchange_api_key>
-  api_secret: <your_exchange_api_secret>
-```
-### Usage:
+## Acknowledgments
 
-1. Clone the repository:
+- Thanks to the Solana community for providing valuable resources and documentation.
 
-```bash
-git clone https://github.com/garbache/memecoin.git
-cd memecoin
-```
+## Disclaimer
 
-2. Install dependencies:
+This bot comes with no guarantees or warranties. Use it at your own risk, and be aware of potential risks associated with automated trading on the blockchain.
 
-```bash
-pip install -r requirements.txt
-```
-
-3. Configure the bot:
-
-   - Create a copy of `config.json.example` as `config.json`.
-   - Fill in the required information such as Solana wallet address, private key, token pair, and exchange API keys.
-
-4. Run the bot.
-
-
-### Note:
-
-- Ensure you handle sensitive information (such as private keys and API keys) securely.
-- Implement proper error handling, logging, and testing as your project evolves.
-- Consider adding features like risk management, stop-loss, and take-profit strategies to enhance the bot's functionality.
+Happy trading on the Solana blockchain!
