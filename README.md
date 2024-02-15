@@ -1,5 +1,5 @@
 # Solana SPL Token Trading Bot
-
+Tool is designed to facilitate the snipping and trading of SPL tokens on the Solana blockchain. It leverages the SolNet library for Solana blockchain interaction.
 
 ## Features
 
