@@ -1,6 +1,5 @@
 # Solana SPL Token Trading Bot
-Tool is designed to facilitate the snipping and trading of SPL tokens on the Solana blockchain. It leverages the SolNet library for Solana blockchain interaction.
-
+Application designed for automated and manual trading of SPL tokens on the Solana blockchain. It supports customizable transaction priority levels, auto-buy configurations, buy/sell buttons with configurable parameters, and adjustable slippage settings.
 ## Features
 
 1. **Transaction Priority Levels:**
